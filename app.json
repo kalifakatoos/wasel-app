@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "واصل",
+    "slug": "wasel-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "wasel",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "primaryColor": "#0F9D7A",
+    "ios": {
+      "bundleIdentifier": "ly.wasel.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "ar",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "ly.wasel.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F9D7A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro",
+      "lang": "ar",
+      "name": "واصل — توصيل الطلبات",
+      "shortName": "واصل",
+      "themeColor": "#0F9D7A",
+      "backgroundColor": "#F7F8FA"
+    },
+    "locales": {
+      "ar": "./src/i18n/locales/ar.json"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F9D7A",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 160
+        }
+      ],
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true,
+          "supportedLocales": [
+            "ar",
+            "en"
+          ]
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "supportsRTL": true,
+      "forcesRTL": true,
+      "router": {},
+      "eas": {}
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
